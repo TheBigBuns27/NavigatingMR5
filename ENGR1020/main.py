@@ -8,6 +8,7 @@ st.write("Please enter a professor's name, OR enter a room number and directions
 roomNums = h.roomNums()
 locations = h.locations()
 col1, col2 = st.columns(2)
+accessiblity = st.checkbox("Accessiblity Needed?")
 
 with col1:
     end1 = st.selectbox("Please choose a room number", roomNums)
