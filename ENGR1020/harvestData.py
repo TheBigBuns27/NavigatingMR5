@@ -18,5 +18,5 @@ def locations():
 
 def convertRoomToInt(room):
     df = setDf()
-    roomNum = str(df.loc[df['Location Name'] == "Griffin Lab"].index.tolist()[0])
+    roomNum = str(df.loc[df['Location Name'] == room].index.tolist()[0])
     return roomNum
