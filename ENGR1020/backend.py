@@ -355,7 +355,7 @@ def navigateMR5(start, end, accessibility):
     
     returned = []
     if accessibility and ((checkpoint_number > 7 and end[0] == "1") or (checkpoint_number < 8 and end[0] == "2")):
-        if checkpoint_number%7 < 4:
+        if 0 < checkpoint_number%7 < 4:
             returned += directions(shortest_path(graph, start, "Elevator 1"))
             returned += directions(shortest_path(graph, "Elevator 1", end)[1:])
         else:
