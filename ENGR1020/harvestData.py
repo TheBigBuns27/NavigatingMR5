@@ -1,7 +1,7 @@
 import pandas as pd
 
 def setDf():
-    roomAssignments = pd.read_excel("MR5 Room Number Assignments.xlsx")
+    roomAssignments = pd.read_excel("ENGR1020/rooms.xlsx")
     roomAssignments.set_index("Room Number", inplace=True, drop=True)
     roomAssignments.index.name = None
     return roomAssignments
