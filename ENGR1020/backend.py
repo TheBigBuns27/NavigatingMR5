@@ -175,7 +175,7 @@ def directions(path):
             elif (" 2" in path[i] and " 3" in path[i + 1]) or ("9" in path[i] and "10" in path[i + 1]):
                 toString += ["Walk into the hallway" ]
             elif (" 3" in path[i] and " 4" in path[i+1]) or ("10" in path[i] and "11" in path[i+1]):
-                toString += ["Make a right into the hallway "]
+                toString += ["Make a right into the next large hallway "]
 
             elif (" 2" in path[i] and " 1" in path[i + 1]) or ("9" in path[i] and "8" in path[i+1]):
                 toString += ["Walk across the lobby and into the stairs "]
