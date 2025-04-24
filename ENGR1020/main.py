@@ -10,7 +10,7 @@ if st.query_params.get("password") == "wahoowa":
     st.write("Hello admin!")
     st.write("In order to make a change to the room assignments, please follow these steps")
     st.write("Step 1. Download this excel sheet.")
-    with open("rooms.xlsx", "rb") as f:
+    with open("ENGR1020/rooms.xlsx", "rb") as f:
         st.download_button("EXCEL SHEET", f, "rooms.xlsx")
     st.write("Step 2. Make the necessary changes to the contents of each room. Ex: Christ Lab #2 --> Smith Lab #2")
     st.write("NOTE: Contact the team if you want to make changes to the room numbers themselves")
